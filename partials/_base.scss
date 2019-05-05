@@ -9,10 +9,6 @@ body {
     letter-spacing: 2px;
 }
 
-.wrapper {
-    max-width: 1400px;
-}
-
 img {
     width: 100%;
     max-width: 100%;
@@ -104,25 +100,38 @@ main i {
 form {
     font-family: $secondaryFont;
 
-    [type="text"] {
-        background-color: $yellow;
-    }
-
-    [name="email"] {
-        background-color: $yellow;
+    [type="text"],
+    [type="email"] {
+        border: none;
+        border-bottom: 1px solid $yellow;
     }
 
     textarea {
-        background-color: $yellow;
+        border: 1px solid $yellow;
     }
 
-    [type="submit"] {
-        background-color: $yellow;
+    button {
+        height: 50px;
+        width: 100%;
+        border: none;
+        background-color: $green;
+        color: $white;
     }
 
-    &::placeholder {
-        font-weight: light;
-        line-height: 32px;
-        letter-spacing: 2px;
+    [type="text"],
+    [type="email"],
+    textarea {
+        background: none;
+
+        &::placeholder {  //not working
+            color: $white;
+            font-weight: light;
+            line-height: 32px;
+            letter-spacing: 2px;
+        }
     }
+}
+
+footer a i {
+    color: $yellow;
 }

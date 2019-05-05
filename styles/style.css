@@ -195,10 +195,6 @@ body {
   letter-spacing: 2px;
 }
 
-.wrapper {
-  max-width: 1400px;
-}
-
 img {
   width: 100%;
   max-width: 100%;
@@ -290,46 +286,70 @@ form {
   font-family: "Lato", sans serif;
 }
 
-form [type="text"] {
-  background-color: #ffc600;
-}
-
-form [name="email"] {
-  background-color: #ffc600;
+form [type="text"],
+form [type="email"] {
+  border: none;
+  border-bottom: 1px solid #ffc600;
 }
 
 form textarea {
-  background-color: #ffc600;
+  border: 1px solid #ffc600;
 }
 
-form [type="submit"] {
-  background-color: #ffc600;
+form button {
+  height: 50px;
+  width: 100%;
+  border: none;
+  background-color: #555f02;
+  color: #fafffe;
 }
 
-form::-webkit-input-placeholder {
+form [type="text"],
+form [type="email"],
+form textarea {
+  background: none;
+}
+
+form [type="text"]::-webkit-input-placeholder,
+form [type="email"]::-webkit-input-placeholder,
+form textarea::-webkit-input-placeholder {
+  color: #fafffe;
   font-weight: light;
   line-height: 32px;
   letter-spacing: 2px;
 }
 
-form:-ms-input-placeholder {
+form [type="text"]:-ms-input-placeholder,
+form [type="email"]:-ms-input-placeholder,
+form textarea:-ms-input-placeholder {
+  color: #fafffe;
   font-weight: light;
   line-height: 32px;
   letter-spacing: 2px;
 }
 
-form::-ms-input-placeholder {
+form [type="text"]::-ms-input-placeholder,
+form [type="email"]::-ms-input-placeholder,
+form textarea::-ms-input-placeholder {
+  color: #fafffe;
   font-weight: light;
   line-height: 32px;
   letter-spacing: 2px;
 }
 
-form::placeholder {
+form [type="text"]::placeholder,
+form [type="email"]::placeholder,
+form textarea::placeholder {
+  color: #fafffe;
   font-weight: light;
   line-height: 32px;
   letter-spacing: 2px;
 }
 
-html {
-  width: 100px;
+footer a i {
+  color: #ffc600;
+}
+
+.wrapper {
+  max-width: 1400px;
 }
