@@ -1,0 +1,128 @@
+html {
+    font-size: 125%;
+}
+
+body {
+    background-color: $brown;
+    font-family: $primaryFont;
+    line-height: 32px;
+    letter-spacing: 2px;
+}
+
+.wrapper {
+    max-width: 1400px;
+}
+
+img {
+    width: 100%;
+    max-width: 100%;
+}
+
+
+nav {
+    line-height: 29px;
+    letter-spacing: 1px;
+
+    a {
+        color: $yellow;
+        text-decoration: none;
+        font-family: $primaryFont;
+
+        &:hover {
+            color: lighten($yellow, 20);
+        }
+    }
+}
+
+ul li {
+    list-style: none;
+
+    a {
+        color: $white;
+        font-family: $secondaryFont;
+        font-weight: bold;
+        text-transform: uppercase;
+
+        &:hover {
+            color: $yellow;
+        }
+    }
+}
+
+main a {
+    display: block;
+    height: 30px;
+    width: 110px;
+    background-color: $green;
+    color: $white;
+    text-decoration: none;
+}
+
+h1 {
+    color:$yellow;
+    font-size: 5.75rem;
+}
+
+h2 {
+    color: $yellow;
+    line-height: 69.6px;
+    letter-spacing: 10.9px;
+    font-size: 5.25rem;
+}
+
+h3 {
+    color: $yellow;
+    line-height: 58px;
+    letter-spacing: 4.9px;
+    font-size: 2.25rem;
+}
+
+h4 {
+    color: $yellow;
+    line-height: 58px;
+    letter-spacing: 4.3px;
+    font-size: 2rem;
+}
+
+p {
+    color: $white;
+    font-family: $secondaryFont;
+}
+
+main i {
+    background: $green;
+    padding: 30px;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    vertical-align: middle;
+    text-align: center;
+    line-height: 50px;
+    color: $white;
+}
+
+form {
+    font-family: $secondaryFont;
+
+    [type="text"] {
+        background-color: $yellow;
+    }
+
+    [name="email"] {
+        background-color: $yellow;
+    }
+
+    textarea {
+        background-color: $yellow;
+    }
+
+    [type="submit"] {
+        background-color: $yellow;
+    }
+
+    &::placeholder {
+        font-weight: light;
+        line-height: 32px;
+        letter-spacing: 2px;
+    }
+}
