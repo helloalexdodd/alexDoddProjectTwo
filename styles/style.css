@@ -265,6 +265,23 @@ h4 {
   font-size: 2rem;
 }
 
+h5 {
+  color: #fafffe;
+  font-size: 1rem;
+  font-style: italic;
+  font-family: "Lato", sans serif;
+}
+
+h5 span {
+  font-weight: 900;
+}
+
+h6 {
+  margin: 40px 0 20px;
+  color: #fafffe;
+  font-size: 1.3rem;
+}
+
 p {
   color: #fafffe;
   font-family: "Lato", sans serif;
@@ -336,6 +353,10 @@ form textarea::placeholder {
   font-weight: light;
   line-height: 32px;
   letter-spacing: 2px;
+}
+
+aside ul li {
+  color: #fafffe;
 }
 
 footer a i {
@@ -565,6 +586,86 @@ nav ul li {
 
 .blog header {
   background-image: url(./../assets/blog-image-1.jpg);
+}
+
+.blog .blogContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.blog article {
+  width: calc(70% - 100px);
+  margin: 0 100px 0 0;
+}
+
+.blog article .imageContainer {
+  position: relative;
+  right: 20px;
+}
+
+.blog article .imageContainer img {
+  -webkit-box-shadow: 20px 20px #555f02;
+          box-shadow: 20px 20px #555f02;
+}
+
+.blog .articleContent {
+  border-right: 5px solid #555f02;
+  border-bottom: 5px solid #555f02;
+  padding: 40px;
+}
+
+.blog aside {
+  width: calc(30% - 100px);
+  margin: 0 0 0 100px;
+  position: relative;
+}
+
+.blog aside .imageContainer {
+  position: relative;
+  top: 20px;
+  right: 20px;
+}
+
+.blog aside .imageContainer img {
+  position: absolute;
+  top: 100px;
+  bottom: 20px;
+  left: 20px;
+  z-index: 1;
+}
+
+.blog aside a {
+  width: 100%;
+  font-family: "Lato", sans serif;
+}
+
+.blog aside ul {
+  padding: 0;
+  margin: 10px;
+  font-family: "Lato", sans serif;
+}
+
+.blog aside ul li::before {
+  content: "\2022";
+  color: #ffc600;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.blog .asideContent {
+  position: relative;
+  top: 150px;
+  right: 20px;
+  bottom: 20px;
+  padding: 320px 20px 20px 30px;
+  width: 106.5%;
+  background: #555f02;
 }
 
 .contact header {

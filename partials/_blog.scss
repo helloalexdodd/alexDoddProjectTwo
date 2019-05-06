@@ -3,6 +3,71 @@
         background-image: url(./../assets/blog-image-1.jpg);
     }
 
+    .blogContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    article {
+        width: calc(70% - 100px);
+        margin: 0 100px 0 0;
+
+        .imageContainer {
+            @include position (relative, null, 20px, null, null);
+
+            img {
+                box-shadow: 20px 20px $green;
+            }
+        }
+    }
+
+    .articleContent {
+        border-right: 5px solid $green;
+        border-bottom: 5px solid $green;
+        padding: 40px;
+    }
+
+    aside {
+        width: calc(30% - 100px);
+        margin: 0 0 0 100px;
+        position: relative;
+
+        .imageContainer {
+            @include position (relative, 20px, 20px, null, null);                
+
+            img {
+                @include position (absolute, 100px, null, 20px, 20px);
+                z-index: 1;                                
+            }
+        }
+
+        a {
+            width: 100%;
+            font-family: $secondaryFont;
+        }
+
+        ul {
+            padding: 0;
+            margin: 10px;
+            font-family: $secondaryFont;
+
+            li::before {
+                content: "\2022";
+                color: $yellow;
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+        }
+    }
+
+    .asideContent {
+        @include position (relative, 150px, 20px, 20px, null);
+        padding: 320px 20px 20px 30px;
+        width: 106.5%;
+        background: $green;
+    }
 
 
 }
