@@ -270,18 +270,6 @@ p {
   font-family: "Lato", sans serif;
 }
 
-main i {
-  background: #555f02;
-  padding: 30px;
-  border-radius: 50%;
-  height: 50px;
-  width: 50px;
-  vertical-align: middle;
-  text-align: center;
-  line-height: 50px;
-  color: #fafffe;
-}
-
 form {
   font-family: "Lato", sans serif;
 }
@@ -355,24 +343,34 @@ footer a i {
 }
 
 .wrapper {
-  max-width: 1400px;
+  max-width: 1345px;
+  margin: 0 auto;
 }
 
 header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 50vh;
   background-repeat: no-repeat;
+  background-size: cover;
+  height: 80vh;
+  width: 100vw;
+}
+
+header span {
+  display: block;
+  margin: 40px 0;
+  color: #fafffe;
+  font-family: "Lato", sans serif;
+  font-size: 2rem;
 }
 
 nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100vw;
+  margin: 0 50px;
 }
 
 nav ul {
@@ -383,4 +381,192 @@ nav ul {
 
 nav ul li {
   margin: 0 20px;
+}
+
+.footerFooter {
+  background: #262725;
+}
+
+.footerFooter p {
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+}
+
+.index header {
+  background-image: url(./../assets/home-image-1.jpg);
+}
+
+.index header img {
+  position: absolute;
+  top: 20vh;
+  width: 40%;
+}
+
+.index header h1 {
+  float: right;
+  width: 50%;
+}
+
+.index .intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 60vh;
+}
+
+.index .intro .article {
+  margin-right: 20px;
+  width: calc(75% - 40px);
+}
+
+.index .intro .imageContainer {
+  margin-left: 20px;
+  width: calc(25% - 40px);
+}
+
+.index .intro .imageContainer img {
+  -webkit-box-shadow: -20px 20px #555f02;
+          box-shadow: -20px 20px #555f02;
+}
+
+.index .intro {
+  width: 100%;
+}
+
+.index .intro .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.index .intro .wrapper .article {
+  width: calc(75% - 20px);
+  margin: 20px;
+}
+
+.index .intro .wrapper .imageContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: calc(25% - 20px);
+}
+
+.index main .iconContainer {
+  height: 50px;
+  width: 50px;
+  background: #555f02;
+  border-radius: 50%;
+}
+
+.index main .iconContainer i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 50px;
+  color: #fafffe;
+}
+
+.index .gallery {
+  height: auto;
+  background: #262725;
+  padding: 20px 0;
+}
+
+.index .gallery ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.index .gallery ul li {
+  width: calc(33.33%);
+  margin: 20px;
+}
+
+.index .about {
+  padding-top: 50px;
+}
+
+.index .about .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.index .about .wrapper .article {
+  width: calc(50% - 40px);
+  max-height: 300px;
+}
+
+.index .about .wrapper .headerContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 20%;
+}
+
+.index .about .wrapper .iconContainer {
+  margin-right: 20px;
+}
+
+.index .aboutMore {
+  background: #262725;
+  padding: 50px 0;
+}
+
+.index .aboutMore .aboutMoreContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.index .aboutMore .aboutMoreContainer:last-of-type .imageContainer {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+}
+
+.index .aboutMore .aboutMoreContainer .imageContainer {
+  width: calc(50% - 40px);
+  margin: 20px;
+}
+
+.index .aboutMore .aboutMoreContainer .articleContainer {
+  width: calc(50% - 40px);
+  margin: 20px;
+}
+
+.index .freeTrials {
+  padding: 50px;
+}
+
+.blog header {
+  background-image: url(./../assets/blog-image-1.jpg);
+}
+
+.contact header {
+  background-image: url(./../assets/contact-image-1.jpg);
 }

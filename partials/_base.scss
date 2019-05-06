@@ -85,18 +85,6 @@ p {
     font-family: $secondaryFont;
 }
 
-main i {
-    background: $green;
-    padding: 30px;
-    border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    vertical-align: middle;
-    text-align: center;
-    line-height: 50px;
-    color: $white;
-}
-
 form {
     font-family: $secondaryFont;
 
@@ -127,7 +115,7 @@ form {
     textarea {
         background: none;
 
-        &::placeholder {  //not working
+        &::placeholder {
             color: $white;
             font-weight: light;
             line-height: 32px;

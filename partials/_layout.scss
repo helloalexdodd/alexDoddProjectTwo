@@ -1,17 +1,28 @@
 .wrapper {
-    max-width: 1400px;
+    max-width: 1345px;
+    margin: 0 auto;
 }
 
 header {
-    display: flex;
-    height: 50vh;
     background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+    width: 100vw;
+
+    span {
+        display: block;
+        margin: 40px 0;
+        color: $white;
+        font-family: $secondaryFont;
+        font-size: 2rem;
+    }
 }
 
 nav {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
+    justify-content: space-between;
+    width: 100vw;
+    margin: 0 50px;
 
     ul {
         display: flex;
@@ -20,5 +31,15 @@ nav {
             margin: 0 20px;
         }
     
+    }
+}
+
+.footerFooter {
+    background: $black;
+
+    p {
+        padding: 10px;
+        margin: 0;
+        text-align: center;
     }
 }
