@@ -288,11 +288,15 @@ form {
 
 form [type="text"],
 form [type="email"] {
+  margin: 10px;
+  width: calc(50% - 30px);
   border: none;
   border-bottom: 1px solid #ffc600;
 }
 
 form textarea {
+  resize: none;
+  width: 100%;
   border: 1px solid #ffc600;
 }
 
@@ -352,4 +356,31 @@ footer a i {
 
 .wrapper {
   max-width: 1400px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 50vh;
+  background-repeat: no-repeat;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+}
+
+nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+nav ul li {
+  margin: 0 20px;
 }

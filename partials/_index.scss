@@ -1,0 +1,31 @@
+.index {
+    header {
+        background-image: url(./../assets/blog-image-1.jpg);
+    }
+
+        
+    .intro {
+        display: flex;
+        padding: 100px;
+
+        .article {
+            width: 75%;
+        }
+
+        .imageContainer {
+            margin-left: 20px;
+            width: 25%;
+
+            img {
+                box-shadow: -20px 20px $green;
+            }
+        }
+    }
+
+    .about {
+        width: 100%;
+        .article {
+            width: 50%;
+        }
+    }
+}

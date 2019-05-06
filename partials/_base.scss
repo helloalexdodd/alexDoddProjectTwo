@@ -102,11 +102,15 @@ form {
 
     [type="text"],
     [type="email"] {
+        margin: 10px;
+        width: calc(50% - 30px);
         border: none;
         border-bottom: 1px solid $yellow;
     }
 
     textarea {
+        resize: none;
+        width: 100%;
         border: 1px solid $yellow;
     }
 
