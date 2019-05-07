@@ -1,10 +1,6 @@
-.blog {
+body.blog {
     header {
         background-image: url(./../assets/blog-image-1.jpg);
-        
-        h2 {
-            margin-top: 10%;
-        }
     }
 
     .blogContainer {
@@ -15,9 +11,10 @@
     article {
         width: calc(70% - 100px);
         margin: 0 100px 0 0;
+        @include position (relative, -300px, 0, 0, 0);
 
         .imageContainer {
-            @include position (relative, null, 20px, null, null);
+            @include position (relative, 0, 0, 0, -20px)
 
             img {
                 box-shadow: 20px 20px $green;
@@ -29,21 +26,18 @@
         border-right: 5px solid $green;
         border-bottom: 5px solid $green;
         padding: 40px;
+        margin-bottom: -200px;
     }
 
     aside {
         width: calc(30% - 100px);
-        margin: 0 0 0 100px;
+        margin: 100px 0 0 100px;
 
-        .imageContainer {
-
-            img {
-                z-index: 1;
+        .imageContainer img {
                 margin-bottom: 0;  
                 padding-bottom: 0; 
                 box-shadow: -20px 20px $green;
                 border-bottom: 20px solid $green;
-            }
         }
 
         a {
@@ -58,25 +52,32 @@
 
             li::before {
                 content: "\2022";
+                display: inline-block;
+                margin-left: -1em;
+                width: 1em;
                 color: $yellow;
                 font-weight: bold;
-                display: inline-block;
-                width: 1em;
-                margin-left: -1em;
             }
         }
     }
 
     .asideContent {
-        @include position (relative, null, 20px, 40px, null);
-        z-index: -1;
-        width: 112%;
+        box-shadow: -20px 0 $green;
         background: $green;
-        padding: 10px 10px 10px 30px;
+        margin-top: -20px;
+        padding: 10px 30px 40px 30px;
+
+        a {
+            position: initial;
+            padding: 0;
+            font-size: 1rem;
+        }
     }
 
     .comments {
         width: calc(70% - 100px);
+        margin-right: calc(30% + 100px + 50px);
+        margin-left: 50px;
 
         h3 {
             color: $white;
@@ -95,7 +96,8 @@
             
             .imageContainer {
                 margin: 65px 50px 0 0;
-                width: 500px;
+                width: 100%;
+                max-width: 300px;
             }
         }
     }
@@ -114,10 +116,76 @@
             font-size: 1.5rem;
         }
     }
+
+@media (max-width: 1160px) {
+    header {
+        background-position: center;
+    }  
+    
+    aside {
+        width: 30%;
+        margin: 0;
+    }
+
+    .comments {
+        width: 70%;
+    
+        .commenterContainer {
+            margin-bottom: 20px;
+
+            .imageContainer {
+                margin-top: 20px;
+            }
+
+            p {
+                font-size: 0.9rem;
+            }
+        }
+    } 
 }
 
-@media (min-width: 1340px) {
-    .blog .asideContent {
-        width: 107%;
+@media (max-width: 1160px) {
+    .post {
+        width: 65%;
+        margin: 0;
     }
+
+    .blogContainer {
+        display: initial;
+        margin: 0;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    article,
+    aside {
+        text-align: center;
+    }
+
+    .post {
+        margin: 0 auto;
+    }
+
+    .articleContent {
+        border: 5px solid $green;
+        margin-top: 50px;
+    }
+
+    aside {
+        // position: initial;
+        top: 0
+        margin: 0 auto;
+        width: 80%;
+
+        .imageContainer {
+            visibility: hidden;
+        }
+    }
+
+    .imageContainer {
+        position: initial;
+    }
+}
 }

@@ -1,15 +1,14 @@
-.index {
+body.index {
     header {
         background-image: url(./../assets/home-image-1.jpg);
 
         img {
-            @include position (absolute, 20vh, null, null, null);
-            width: 40%;
-            max-width: 500px;
+            @include position (absolute, null, null, 15%, null);
+            width: 600px;
         }
 
         h1 {
-            float: right;
+            @include position (absolute, 50px, 0px, null, null);
             width: 50%;
         }
     }
@@ -17,40 +16,29 @@
     .intro {
         display: flex;
         height: 60vh;
+        width: 100%;
+
+        .wrapper {
+            display: flex;
+        }
 
         .article {
-            margin-right: 20px;
-            width: calc(75% - 40px);
+            margin: 20px;
+            padding: 0px 20px;
+            width: calc(75% - 20px);    
         }
 
         .imageContainer {
+             display: flex;
+            flex-direction: column;
+            justify-content: center;
             margin-left: 20px;
-            width: calc(25% - 40px);
+            width: calc(25% - 20px);
 
             img {
                 box-shadow: -20px 20px $green;
             }
         }
-    }
-
-    .intro {
-        width: 100%;
-
-        .wrapper {
-            display: flex;
-
-            .article {
-                width: calc(75% - 20px);
-                margin: 20px;
-            }
-
-            .imageContainer {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-                width: calc(25% - 20px);
-            }
-        }       
     }
 
     main .iconContainer {
@@ -113,27 +101,188 @@
     .aboutMore {
         background: $black;
         padding: 50px 0;
+        text-align: left;
+    }
 
-        .aboutMoreContainer {
-            display: flex;
+    .aboutMoreContainer {
+        display: flex;
+        
 
-                &:last-of-type .imageContainer {
-                    order: 1;
-                }
+        &:first-child .imageContainer {
+            @include position (relative, null, 90px, 90px, null);
+        }
 
-            .imageContainer {
-                width: calc(50% - 40px);
-                margin: 20px;
+        &:last-child .imageContainer {
+            @include position (relative, 90px, null, null, 0);
+            order: 1;
+        }
+
+        .imageContainer {
+            width: calc(50% - 40px);
+            margin: 20px;
+        }
+
+        .articleContainer {
+            width: calc(50% - 40px);
+            margin: 20px;
+        }
+
+        img {
+            box-shadow: 20px 20px $yellow;
+        }
+
+        &:last-child .articleContainer {
+            h3{
+                text-align: right;
             }
 
-            .articleContainer {
-                width: calc(50% - 40px);
-                margin: 20px;
+            a {
+                right: -70%;
             }
         }
     }
 
     .freeTrials {
         padding: 50px;
+
+        a {
+            bottom: -20px;
+        }
     }
+
+@media (max-width: 1180px) {
+    header {
+        background-position: right;
+
+        h1 {
+            @include position (absolute, 0px, 400px, null, null);
+            width: 30%;
+        }
+
+        img {
+             @include position (absolute, 35%, null, null, null);
+            width: 500px;
+        }
+    }
+
+    .aboutMore .aboutMoreContainer {
+     
+            .imageContainer {
+                position: intial;
+            }
+        }
+    }
+
+@media (max-width: 970px) {
+    header {
+        ul {
+            visibility: hidden;
+        }
+        h1 {
+            position: initial;
+            margin: 20% auto;
+            width: auto;
+            text-align: center;
+            font-size: 5rem;
+
+            span {
+                margin-left: 10%;
+                text-align: left;
+            }
+        }
+
+        img {
+            display: none;
+        }
+    }
+
+    .intro {
+        height: 140vh; 
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+        
+            .imageContainer {
+                order: -1;
+                margin: 40px auto;
+                width: 60%;
+            }
+
+            .article {
+                margin: 0 auto;
+                padding: 0;
+                text-align: center;
+            }
+        }
+    }
+
+    .gallery ul {
+        padding: 0 20px;
+
+        li {
+            width: calc(50% - 10px);
+
+            &:last-of-type {
+                display: none;
+            }
+        }
+    }
+
+    .about .wrapper .article {
+            width: 100%;
+            height: 200px;
+            margin: 40px;
+    }
+
+    .aboutMore {
+        background: $black;
+        padding: 50px 0;
+    }
+
+    .aboutMoreContainer {
+        flex-direction: column;
+        margin-bottom: 60px;
+
+        &:first-child .imageContainer {
+            position: initial;
+        }
+
+        &:last-child .imageContainer {
+            position: initial;
+            order: -1;
+        }
+
+        .imageContainer {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        .articleContainer {
+            width: 80%;
+            margin: 20px auto;
+            text-align: center;
+        }
+
+        &:last-child .articleContainer {
+            h3{
+                text-align: center;
+            }
+
+            a {
+                right: 0;
+            }
+        }
+    }
+
+    .freeTrials {
+        padding: 0 20px;
+        height: 60vh;
+        text-align: center;
+    }
+}
+
+@media (max-width: 540px) {
+    
+}
 }

@@ -16,6 +16,11 @@ header {
         font-family: $secondaryFont;
         font-size: 2rem;
     }
+
+    i {
+        @include position (absolute, 20px, 20px, null, null);
+        visibility: hidden;
+    }
 }
 
 nav {
@@ -30,16 +35,29 @@ nav {
         li {
             margin: 0 20px;
         }
-    
     }
 }
 
-.footerFooter {
+.copyrightBar {
     background: $black;
 
     p {
         padding: 10px;
         margin: 0;
         text-align: center;
+    }
+}
+
+@media (max-width: 970px) {
+body.intro,
+body.blog,
+body.contact {
+    nav ul {
+        display: none;
+    }
+}
+
+ header i {
+        visibility: visible;
     }
 }
