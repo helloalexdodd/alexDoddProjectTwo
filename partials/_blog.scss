@@ -1,5 +1,4 @@
 .blog {
-    
     header {
         background-image: url(./../assets/blog-image-1.jpg);
         
@@ -11,8 +10,6 @@
     .blogContainer {
         display: flex;
         justify-content: space-between;
-        @include position (absolute, 40%, null, null, 0);
-
     }
 
     article {
@@ -79,7 +76,6 @@
     }
 
     .comments {
-        padding-top: 1400px;
         width: calc(70% - 100px);
 
         h3 {

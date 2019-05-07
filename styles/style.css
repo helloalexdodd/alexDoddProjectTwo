@@ -615,9 +615,6 @@ nav ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  position: absolute;
-  top: 40%;
-  left: 0;
 }
 
 .blog article {
@@ -686,7 +683,6 @@ nav ul li {
 }
 
 .blog .comments {
-  padding-top: 1400px;
   width: calc(70% - 100px);
 }
 
