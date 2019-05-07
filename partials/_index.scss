@@ -3,9 +3,9 @@
         background-image: url(./../assets/home-image-1.jpg);
 
         img {
-            position: absolute;
-            top: 20vh;
+            @include position (absolute, 20vh, null, null, null);
             width: 40%;
+            max-width: 500px;
         }
 
         h1 {

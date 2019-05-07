@@ -19,6 +19,11 @@ nav {
     line-height: 29px;
     letter-spacing: 1px;
 
+    .logo {
+        font-size: 2rem;
+        margin-top: 20px;
+    }
+
     a {
         color: $yellow;
         text-decoration: none;
@@ -103,6 +108,8 @@ p {
 }
 
 form {
+    margin-bottom: 50px;
+    padding: 40px;
     font-family: $secondaryFont;
 
     [type="text"],
@@ -111,6 +118,12 @@ form {
         width: calc(50% - 30px);
         border: none;
         border-bottom: 1px solid $yellow;
+    }
+
+    input,
+    textarea {
+        margin-bottom: 40px;
+        padding: 20px;
     }
 
     textarea {
@@ -125,6 +138,8 @@ form {
         border: none;
         background-color: $green;
         color: $white;
+        font-family: $primaryFont;
+        font-size: 1.5rem;
     }
 
     [type="text"],

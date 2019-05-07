@@ -3,6 +3,13 @@
         background-image: url(./../assets/contact-image-1.jpg);
     }
 
+    main {
+        display: flex;
+    }
+
+    form {
+        background-color: $black;
+    }
 
     
 }

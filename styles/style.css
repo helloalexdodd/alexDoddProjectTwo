@@ -205,6 +205,11 @@ nav {
   letter-spacing: 1px;
 }
 
+nav .logo {
+  font-size: 2rem;
+  margin-top: 20px;
+}
+
 nav a {
   color: #ffc600;
   text-decoration: none;
@@ -288,6 +293,8 @@ p {
 }
 
 form {
+  margin-bottom: 50px;
+  padding: 40px;
   font-family: "Lato", sans serif;
 }
 
@@ -297,6 +304,12 @@ form [type="email"] {
   width: calc(50% - 30px);
   border: none;
   border-bottom: 1px solid #ffc600;
+}
+
+form input,
+form textarea {
+  margin-bottom: 40px;
+  padding: 20px;
 }
 
 form textarea {
@@ -311,6 +324,8 @@ form button {
   border: none;
   background-color: #555f02;
   color: #fafffe;
+  font-family: "Dokdo", cursive;
+  font-size: 1.5rem;
 }
 
 form [type="text"],
@@ -364,7 +379,7 @@ footer a i {
 }
 
 .wrapper {
-  max-width: 1345px;
+  max-width: 1400px;
   margin: 0 auto;
 }
 
@@ -422,6 +437,7 @@ nav ul li {
   position: absolute;
   top: 20vh;
   width: 40%;
+  max-width: 500px;
 }
 
 .index header h1 {
@@ -588,6 +604,10 @@ nav ul li {
   background-image: url(./../assets/blog-image-1.jpg);
 }
 
+.blog header h2 {
+  margin-top: 10%;
+}
+
 .blog .blogContainer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -595,6 +615,9 @@ nav ul li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  position: absolute;
+  top: 40%;
+  left: 0;
 }
 
 .blog article {
@@ -621,21 +644,15 @@ nav ul li {
 .blog aside {
   width: calc(30% - 100px);
   margin: 0 0 0 100px;
-  position: relative;
-}
-
-.blog aside .imageContainer {
-  position: relative;
-  top: 20px;
-  right: 20px;
 }
 
 .blog aside .imageContainer img {
-  position: absolute;
-  top: 100px;
-  bottom: 20px;
-  left: 20px;
   z-index: 1;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  -webkit-box-shadow: -20px 20px #555f02;
+          box-shadow: -20px 20px #555f02;
+  border-bottom: 20px solid #555f02;
 }
 
 .blog aside a {
@@ -660,14 +677,73 @@ nav ul li {
 
 .blog .asideContent {
   position: relative;
-  top: 150px;
   right: 20px;
-  bottom: 20px;
-  padding: 320px 20px 20px 30px;
-  width: 106.5%;
+  bottom: 40px;
+  z-index: -1;
+  width: 112%;
   background: #555f02;
+  padding: 10px 10px 10px 30px;
+}
+
+.blog .comments {
+  padding-top: 1400px;
+  width: calc(70% - 100px);
+}
+
+.blog .comments h3 {
+  color: #fafffe;
+  margin-bottom: 0;
+}
+
+.blog .comments h4 {
+  margin: 0;
+  font-family: "Lato", sans serif;
+  font-size: 1rem;
+}
+
+.blog .comments .commenterContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 50px;
+}
+
+.blog .comments .commenterContainer .imageContainer {
+  margin: 65px 50px 0 0;
+  width: 500px;
+}
+
+.blog form {
+  margin-bottom: 50px;
+}
+
+.blog form input,
+.blog form textarea {
+  margin-bottom: 40px;
+  padding: 20px;
+}
+
+.blog form button {
+  font-family: "Dokdo", cursive;
+  font-size: 1.5rem;
+}
+
+@media (min-width: 1340px) {
+  .blog .asideContent {
+    width: 107%;
+  }
 }
 
 .contact header {
   background-image: url(./../assets/contact-image-1.jpg);
+}
+
+.contact main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contact form {
+  background-color: #262725;
 }

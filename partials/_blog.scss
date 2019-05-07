@@ -1,11 +1,18 @@
 .blog {
+    
     header {
         background-image: url(./../assets/blog-image-1.jpg);
+        
+        h2 {
+            margin-top: 10%;
+        }
     }
 
     .blogContainer {
         display: flex;
         justify-content: space-between;
+        @include position (absolute, 40%, null, null, 0);
+
     }
 
     article {
@@ -30,14 +37,15 @@
     aside {
         width: calc(30% - 100px);
         margin: 0 0 0 100px;
-        position: relative;
 
         .imageContainer {
-            @include position (relative, 20px, 20px, null, null);                
 
             img {
-                @include position (absolute, 100px, null, 20px, 20px);
-                z-index: 1;                                
+                z-index: 1;
+                margin-bottom: 0;  
+                padding-bottom: 0; 
+                box-shadow: -20px 20px $green;
+                border-bottom: 20px solid $green;
             }
         }
 
@@ -63,11 +71,57 @@
     }
 
     .asideContent {
-        @include position (relative, 150px, 20px, 20px, null);
-        padding: 320px 20px 20px 30px;
-        width: 106.5%;
+        @include position (relative, null, 20px, 40px, null);
+        z-index: -1;
+        width: 112%;
         background: $green;
+        padding: 10px 10px 10px 30px;
     }
 
+    .comments {
+        padding-top: 1400px;
+        width: calc(70% - 100px);
 
+        h3 {
+            color: $white;
+            margin-bottom: 0;
+        }
+
+        h4 {
+            margin: 0;
+            font-family: $secondaryFont;
+            font-size: 1rem;
+        }
+
+        .commenterContainer {
+            display: flex;
+            margin-bottom: 50px;
+            
+            .imageContainer {
+                margin: 65px 50px 0 0;
+                width: 500px;
+            }
+        }
+    }
+
+    form {
+        margin-bottom: 50px;
+
+        input,
+        textarea {
+            margin-bottom: 40px;
+            padding: 20px;
+        }
+
+        button {
+            font-family: $primaryFont;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+@media (min-width: 1340px) {
+    .blog .asideContent {
+        width: 107%;
+    }
 }
