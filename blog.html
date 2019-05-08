@@ -17,10 +17,10 @@
             <nav class="wrapper">
                 <a href="#" id="home" class="logo">Mindn'Soul</a>
                 <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="contact.html">contact</a></li>
                 </ul>
             </nav>
             <i class="fas fa-bars"></i>
@@ -92,9 +92,14 @@
                     </div>
                 </div>
             </div>
-            <form action="">
-                <input type="text" placeholder="Name">
-                <input type="email" name="email" placeholder="Email address"></email>
+            <form action="" id="blogContact">
+                <fieldset>
+                    <label class="visuallyHidden" for="name">Enter name here.</label>
+                    <input type="text" id="name" placeholder="Name">
+                    <label class="visuallyHidden" for="email">Enter email here.</label>
+                    <input type="email" name="email" id="email" placeholder="Email address"></email>
+                </fieldset>
+                <label class="visuallyHidden" for="commentBox">Enter comment here.</label>
                 <textarea name="commentBox" id="commentBox" cols="30" rows="10" placeholder="Comment"></textarea>
                 <button type="submit" name="submit">Post Comment</button>
             </form>

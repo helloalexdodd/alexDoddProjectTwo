@@ -17,10 +17,10 @@
             <nav class="wrapper">
                 <a href="#" id="home" class="logo">Mindn'Soul</a>
                 <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">about</a></li>
-                    <li><a href="#">blog</a></li>
-                    <li><a href="#">contact</a></li>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="blog.html">blog</a></li>
+                    <li><a href="contact.html">contact</a></li>
                 </ul>
             </nav>
             <i class="fas fa-bars"></i>
@@ -31,10 +31,15 @@
 <!-- start of main -->
     <main class="wrapper">
 <!-- start of contact form -->
-        <form action="" class="contact">
-            <input type="text" placeholder="Name">
-            <input type="email" name="email" placeholder="Email address"></email>
-            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+        <form action="" class="contact" id="contact">
+            <fieldset>
+                <label class="visuallyHidden" for="name">Enter name here.</label>
+                <input type="text" id="name" placeholder="Name">
+                <label class="visuallyHidden" for="email">Enter email here.</label>
+                <input type="email" name="email" id="email" placeholder="Email address"></input>
+            </fieldset>
+            <label class="visuallyHidden" for="comment">Enter comment here.</label>
+            <textarea name="" id="comment" cols="30" rows="10" placeholder="Message"></textarea>
             <button type="submit" name="submit">Submit</button>
         </form>
 <!-- end of contact form -->
