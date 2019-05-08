@@ -492,7 +492,7 @@ nav ul li {
 }
 
 body.index header {
-  background-image: url(./../assets/home-image-1.jpg);
+  background-image: url(./../assets/homeImage1.jpg);
 }
 
 body.index header img {
@@ -671,6 +671,14 @@ body.index .aboutMoreContainer:last-child .articleContainer a {
   right: -70%;
 }
 
+body.index div.bannerImage {
+  background-image: url(./../assets/bannerImage.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+}
+
 body.index .freeTrials {
   padding: 50px;
 }
@@ -790,6 +798,13 @@ body.index .freeTrials a {
   body.index .aboutMoreContainer:last-child .articleContainer a {
     right: 0;
   }
+  body.index div.bannerImage {
+    background-image: url(./../assets/bannerImage.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 50%;
+    height: 400px;
+  }
   body.index .freeTrials {
     padding: 0 20px;
     height: 60vh;
@@ -813,7 +828,7 @@ body.blog .skip-link:focus {
 }
 
 body.blog header {
-  background-image: url(./../assets/blog-image-1.jpg);
+  background-image: url(./../assets/blogImage1.jpg);
 }
 
 body.blog .blogContainer {
@@ -1014,7 +1029,7 @@ body.blog form button {
 }
 
 body.contact header {
-  background-image: url(./../assets/contact-image-1.jpg);
+  background-image: url(./../assets/contactImage1.jpg);
 }
 
 body.contact main {
