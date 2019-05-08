@@ -1,5 +1,7 @@
+// styles specific to the blog page
+
 body.blog {
-    
+// start of header styles
     header {
         background-image: url(./../assets/blogImage1.jpg);
     
@@ -7,7 +9,8 @@ body.blog {
             margin-top: 150px;
         }
     }
-
+// end of header styles
+// start of blog post styles
     .blogContainer {
         display: flex;
         justify-content: space-between;
@@ -33,7 +36,8 @@ body.blog {
         padding: 40px;
         margin-bottom: -200px;
     }
-
+// end of blog post styles
+// start of aside styles
     aside {
         width: calc(30% - 100px);
         margin: 100px 0 0 100px;
@@ -78,7 +82,8 @@ body.blog {
             font-size: 1rem;
         }
     }
-
+// end of aside styles
+// start of comment section styles
     .comments {
         width: calc(70% - 100px);
         margin-right: calc(30% + 100px + 50px);
@@ -106,7 +111,8 @@ body.blog {
             }
         }
     }
-
+// end of comment section styles
+// start of form styles
     form {
         margin-bottom: 50px;
 
@@ -121,7 +127,8 @@ body.blog {
             font-size: 1.5rem;
         }
     }
-
+// end of form styles
+// start of first media
     @media (max-width: 1160px) {
          header {
             background-position: center;
@@ -197,12 +204,15 @@ body.blog {
             margin: 0 auto;
         }
     }
-
+// end of first media
+// start of second media
     @media (max-width: 550px) {
+// start of header styles
         header h2 {
             margin-top: 300px;
         }
-        
+// end of header styles
+// start of blog post styles
         .post {
             margin: 0;
             width: 100%;
@@ -223,7 +233,8 @@ body.blog {
                 }
             }
         }
-        
+// end of blog post styles
+// start of aside styles
         aside {
             margin: 0;
             width: 100%;
@@ -237,7 +248,8 @@ body.blog {
                 padding: 5px;
             }
         }
-        
+// end of aside styles
+// start of comment section styles
         .comments {
             width: 90%;
 
@@ -251,7 +263,8 @@ body.blog {
             } 
 
         }
-
+// end of comment section styles
+// start of form styles
         form {
             padding: 0;
             margin-bottom: 20px;
@@ -262,13 +275,14 @@ body.blog {
                
                 input {
                     width: 90%;
-            }
+                }
 
                 button [type="submit"]{
                     margin-bottom: 20px;
                 }
+            }
         }
-
-    }
+// end of form styles
+// end of second media
     }
 }

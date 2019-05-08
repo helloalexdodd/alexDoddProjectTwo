@@ -1,12 +1,17 @@
+// styles specific to the contact page
+
 body.contact {
+// start of header styles
     header {
         background-image: url(./../assets/contactImage1.jpg);
     }
-
+// end of header styles
+// start of main styles
     main {
         display: flex;
     }
-
+// end of main styles
+// start of form styles
     form {
         @include position (absolute, 60%, null, null, 10%);
         width:55%;
@@ -17,17 +22,20 @@ body.contact {
             margin-bottom: 50px;
         }
     }
-
+// end of form styles
+// start of footer styles
     footer {
         float: right;
         margin: 100px 100px;
     }
-
+// end of footer styles
+// start of copyrightBar styles
     .copyrightBar {
         margin-top: 60vh;
         width: 100vw;
     }   
-
+// end of copyrightBar styles
+// start of first media
     @media (max-width: 1180px) {
         form {
             @include position (absolute, 65%, null, null, 5%);
@@ -38,22 +46,25 @@ body.contact {
             @include position (absolute, null, -7%, null, null);
         }
     }
-
-
+// end of first media
+// start of second media
     @media (max-width: 960px) {
+// start of header styles
         h2 {
             margin-top: 250px;
             text-align: center;
             font-size: 3.5rem;
         }
-
+// end of header styles
+// start of form styles
         form {
             @include position (absolute, 60%, 0,0,0);
             width: 80%;
             height: 600px;
             margin: 20px auto;
         }
-
+// end of form styles
+// start of footer styles
         footer {
             position: initial;
             margin: 65vh 0 50px;
@@ -64,15 +75,14 @@ body.contact {
                 margin: 5px;
             }
         }
-
-        .copyrightBar {
-            // margin: 0;
-        }
+// end of footer styles
     }
-
+// end of second media
+// start of third media
     @media (max-width: 660px) {
+// start of form styles
         form {
-            padding-top: 0;
+            padding: 0 20px 20px;
             height: 650px;
             box-shadow: 10px 10px $yellow;
              
@@ -89,10 +99,13 @@ body.contact {
                 }
             }
         }
-
+// end of form styles
+// start of footer styles
         footer {
             position: initial;
             margin: 75vh 0 50px;
         }
+// end of footer styles
     }
+// end of third media
 }

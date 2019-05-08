@@ -1,3 +1,5 @@
+// this file is all of the base styling to start the project
+
 html {
     font-size: 125%;
 }
@@ -9,6 +11,7 @@ body {
     letter-spacing: 2px;
 }
 
+// skip to main link
 .skipLink {
     margin: 0;
     padding: 0;
@@ -184,6 +187,7 @@ form {
     }
 }
 
+// visually hidden class for my labels
 .visuallyHidden:not(:focus):not(:active) {
     position: absolute;
     margin: -1px;

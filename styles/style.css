@@ -481,9 +481,7 @@ nav ul li {
 }
 
 @media (max-width: 970px) {
-  body.intro nav ul,
-  body.blog nav ul,
-  body.contact nav ul {
+  header nav ul {
     display: none;
   }
   header i {
@@ -548,24 +546,6 @@ body.index .intro .imageContainer img {
           box-shadow: -20px 20px #555f02;
 }
 
-body.index main .iconContainer {
-  height: 50px;
-  width: 50px;
-  background: #555f02;
-  border-radius: 50%;
-}
-
-body.index main .iconContainer i {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  line-height: 50px;
-  color: #fafffe;
-}
-
 body.index .gallery {
   height: auto;
   background: #262725;
@@ -619,6 +599,24 @@ body.index .about .wrapper .headerContainer {
 
 body.index .about .wrapper .iconContainer {
   margin-right: 20px;
+}
+
+body.index main .iconContainer {
+  height: 50px;
+  width: 50px;
+  background: #555f02;
+  border-radius: 50%;
+}
+
+body.index main .iconContainer i {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  line-height: 50px;
+  color: #fafffe;
 }
 
 body.index .aboutMore {
@@ -709,9 +707,6 @@ body.index .freeTrials a {
 }
 
 @media (max-width: 970px) {
-  body.index header ul {
-    visibility: hidden;
-  }
   body.index header h1 {
     position: initial;
     margin: 20% auto;
@@ -798,17 +793,6 @@ body.index .freeTrials a {
   }
   body.index .aboutMoreContainer:last-child .articleContainer a {
     right: 0;
-  }
-  body.index div.bannerImage {
-    background-image: url(./../assets/bannerImage.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: 50% 50%;
-  }
-  body.index .freeTrials {
-    padding: 0 20px;
-    height: 50vh;
-    text-align: center;
   }
 }
 
@@ -1198,7 +1182,7 @@ body.contact .copyrightBar {
 
 @media (max-width: 660px) {
   body.contact form {
-    padding-top: 0;
+    padding: 0 20px 20px;
     height: 650px;
     -webkit-box-shadow: 10px 10px #ffc600;
             box-shadow: 10px 10px #ffc600;

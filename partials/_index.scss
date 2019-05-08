@@ -1,4 +1,7 @@
+// styles specific to the index page
+
 body.index {
+// start of header styles
     header {
         background-image: url(./../assets/homeImage1.jpg);
 
@@ -12,7 +15,9 @@ body.index {
             width: 50%;
         }
     }
-        
+// end of header styles
+// start of main styles
+// start of intro section styles
     .intro {
         display: flex;
         height: 60vh;
@@ -40,21 +45,8 @@ body.index {
             }
         }
     }
-
-    main .iconContainer {
-        height: 50px;
-        width: 50px;
-        background: $green;
-        border-radius: 50%;
-
-        i {
-            display: flex;
-            justify-content: center;
-            line-height: 50px;
-            color: $white;
-        }
-    }
-
+// end of intro section styles
+// start of gallery section styles
     .gallery {
         height: auto;
         background: $black;
@@ -72,7 +64,8 @@ body.index {
             }
         }
     }
-
+// end of gallery styles
+// start of about section styles
     .about {
         padding-top: 50px;
 
@@ -96,8 +89,23 @@ body.index {
                 margin-right: 20px;
             }
         }
-    }   
+    }
 
+    main .iconContainer {
+        height: 50px;
+        width: 50px;
+        background: $green;
+        border-radius: 50%;
+
+        i {
+            display: flex;
+            justify-content: center;
+            line-height: 50px;
+            color: $white;
+        }
+    }
+// end of about section styles
+// start of aboutMore section styles
     .aboutMore {
         background: $black;
         padding: 50px 0;
@@ -141,7 +149,8 @@ body.index {
             }
         }
     }
-
+// end of aboutMore section styles
+// start of freeTrials section styles
     div.bannerImage {
             background-image: url(./../assets/bannerImage.jpg);
             background-repeat: no-repeat;
@@ -158,8 +167,11 @@ body.index {
             bottom: -20px;
         }
     }
-
+// end of freeTrials section styles
+// end of main styles
+// start of first media
 @media (max-width: 1180px) {
+// start of header styles
     header {
         background-position: right;
 
@@ -173,7 +185,8 @@ body.index {
             width: 500px;
         }
     }
-
+// end of header styles
+// start of aboutMore section styles
     .aboutMore .aboutMoreContainer {
      
             .imageContainer {
@@ -181,158 +194,157 @@ body.index {
             }
         }
     }
-
-@media (max-width: 970px) {
-    header {
-        ul {
-            visibility: hidden;
-        }
-        h1 {
-            position: initial;
-            margin: 20% auto;
-            width: auto;
-            text-align: center;
-            font-size: 5rem;
-
-            span {
-                margin-left: 10%;
-                text-align: left;
-            }
-        }
-
-        img {
-            display: none;
-        }
-    }
-
-    .intro {
-        height: 140vh; 
-
-        .wrapper {
-            display: flex;
-            flex-direction: column;
-        
-            .imageContainer {
-                order: -1;
-                margin: 40px auto;
-                width: 60%;
-            }
-
-            .article {
-                margin: 0 auto;
-                padding: 0;
+// end of first media
+// start of second media
+    @media (max-width: 970px) {
+// start of header styles
+        header {
+            h1 {
+                position: initial;
+                margin: 20% auto;
+                width: auto;
                 text-align: center;
+                font-size: 5rem;
+
+                span {
+                    margin-left: 10%;
+                    text-align: left;
+                }
             }
-        }
-    }
 
-    .gallery ul {
-        padding: 0 20px;
-
-        li {
-            width: calc(50% - 10px);
-
-            &:last-of-type {
+            img {
                 display: none;
             }
         }
-    }
+// end of header styles
+// start of intro section styles
+        .intro {
+            height: 140vh; 
 
-    .about .wrapper .article {
+            .wrapper {
+                display: flex;
+                flex-direction: column;
+            
+                .imageContainer {
+                    order: -1;
+                    margin: 40px auto;
+                    width: 60%;
+                }
+
+                .article {
+                    margin: 0 auto;
+                    padding: 0;
+                    text-align: center;
+                }
+            }
+        }
+// end of intro section styles
+// start of gallery styles
+        .gallery ul {
+            padding: 0 20px;
+
+            li {
+                width: calc(50% - 10px);
+
+                &:last-of-type {
+                    display: none;
+                }
+            }
+        }
+// end of gallery styles
+// start of about section styles
+        .about .wrapper .article {
             width: 100%;
             height: 200px;
             margin: 40px;
-    }
-
-    .aboutMore {
-        background: $black;
-        padding: 50px 0;
-    }
-
-    .aboutMoreContainer {
-        flex-direction: column;
-        margin-bottom: 60px;
-
-        &:first-child .imageContainer {
-            position: initial;
+        }
+// end of about section styles
+// start of aboutMore section styles
+        .aboutMore {
+            background: $black;
+            padding: 50px 0;
         }
 
-        &:last-child .imageContainer {
-            position: initial;
-            order: -1;
-        }
+        .aboutMoreContainer {
+            flex-direction: column;
+            margin-bottom: 60px;
 
-        .imageContainer {
-            width: 80%;
-            margin: 0 auto;
-        }
+            &:first-child .imageContainer {
+                position: initial;
+            }
 
-        .articleContainer {
-            width: 80%;
-            margin: 20px auto;
-            text-align: center;
-        }
+            &:last-child .imageContainer {
+                position: initial;
+                order: -1;
+            }
 
-        &:last-child .articleContainer {
-            h3{
+            .imageContainer {
+                width: 80%;
+                margin: 0 auto;
+            }
+
+            .articleContainer {
+                width: 80%;
+                margin: 20px auto;
                 text-align: center;
             }
 
-            a {
-                right: 0;
+            &:last-child .articleContainer {
+                h3{
+                    text-align: center;
+                }
+
+                a {
+                    right: 0;
+                }
             }
         }
+// end of aboutMore section styles
     }
-
-     div.bannerImage {
-        background-image: url(./../assets/bannerImage.jpg);
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: 50% 50%;
-        // height: 400px;
-    }
-
-    .freeTrials {
-        padding: 0 20px;
-        height: 50vh;
-        text-align: center;
-    }
-}
-
-@media (max-width: 540px) {
-    h1 {
-        visibility: hidden;
-    }
-
-    .intro .wrapper .article{
-        width: 100%;
-    }
-
-    .gallery ul li {
-        margin: 5px;
-    }
-
-    .about {
-        height: 200vh; 
-       
-        .wrapper .article {
-            margin: 20px auto;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
+// end of second media
+// start of third media
+    @media (max-width: 540px) {
+// start of header styles
+        h1 {
+            visibility: hidden;
         }
-    }
+// end of header styles
+// start of intro section styles
+        .intro .wrapper .article{
+            width: 100%;
+        }
+// end of intro section styles
+// start of gallery styles
+        .gallery ul li {
+            margin: 5px;
+        }
+// end of gallery styles
+// start of about section styles
+        .about {
+            height: 200vh; 
+        
+            .wrapper .article {
+                margin: 20px auto;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+            }
+        }
+// end of about section styles
+// start of aboutMore section styles
+        .aboutMore .imageContainer {
+            width: 90%;
+        }
+// end of aboutMore section styles
+// start of freeTrials section styles
+        div.bannerImage {
+            background-position: 75% 0%;
+        }
 
-    .aboutMore .imageContainer {
-        width: 90%;
+        .freeTrials {
+            height: 90vh;
+        }
+// end of freeTrials section styles
     }
-
-    div.bannerImage {
-        background-position: 75% 0%;
-    }
-
-    .freeTrials {
-        height: 90vh;
-    }
-}
+// end of third media
 }
