@@ -195,6 +195,24 @@ body {
   letter-spacing: 2px;
 }
 
+.skipLink {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.skipLink a {
+  position: absolute;
+  top: -200px;
+  background-color: #262725;
+  color: #fafffe;
+  z-index: 1;
+}
+
+.skipLink a:focus {
+  top: 0;
+}
+
 header i {
   color: #fafffe;
 }
@@ -256,7 +274,7 @@ h1 {
 }
 
 h2 {
-  margin: 200px 20px;
+  margin: 25vh 20px;
   color: #ffc600;
   line-height: 69.6px;
   letter-spacing: 10.9px;
@@ -303,6 +321,11 @@ form {
   margin-bottom: 50px;
   padding: 40px;
   font-family: "Lato", sans serif;
+}
+
+form fieldset {
+  border: none;
+  padding: 0;
 }
 
 form [type="text"],
@@ -389,11 +412,6 @@ form textarea::placeholder {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-fieldset {
-  border: none;
-  padding: none;
 }
 
 aside ul li {
@@ -777,6 +795,21 @@ body.index .freeTrials a {
     height: 60vh;
     text-align: center;
   }
+}
+
+body.blog .skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+  font-family: serif;
+  font-size: 2rem;
+}
+
+body.blog .skip-link:focus {
+  left: 0;
 }
 
 body.blog header {

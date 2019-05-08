@@ -9,6 +9,22 @@ body {
     letter-spacing: 2px;
 }
 
+.skipLink {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    a {
+        @include position(absolute, -200px, null, null, null);
+        background-color: $black;
+        color: $white;
+        z-index: 1;
+        &:focus {
+            top:0;
+        }
+    }
+}
+
 header i {
     color: $white;
 }
@@ -71,7 +87,7 @@ h1 {
 }
 
 h2 {
-    margin: 200px 20px;
+    margin: 25vh 20px;
     color: $yellow;
     line-height: 69.6px;
     letter-spacing: 10.9px;
@@ -118,6 +134,11 @@ form {
     margin-bottom: 50px;
     padding: 40px;
     font-family: $secondaryFont;
+
+    fieldset {
+        border: none;
+        padding: 0;
+    }
 
     [type="text"],
     [type="email"] {
@@ -174,11 +195,6 @@ form {
     clip-path: inset(100%);
     clip: rect(0 0 0 0);
     overflow: hidden;
-}
-
-fieldset {
-    border: none;
-    padding: none;
 }
 
 aside ul li {
