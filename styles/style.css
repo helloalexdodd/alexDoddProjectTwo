@@ -274,7 +274,7 @@ h1 {
 }
 
 h2 {
-  margin: 25vh 20px;
+  margin: 300px 20px;
   color: #ffc600;
   line-height: 69.6px;
   letter-spacing: 10.9px;
@@ -699,7 +699,7 @@ body.index .freeTrials a {
   }
   body.index header img {
     position: absolute;
-    top: 35%;
+    top: 30%;
     width: 500px;
   }
   body.index .aboutMore .aboutMoreContainer .imageContainer {
@@ -812,23 +812,49 @@ body.index .freeTrials a {
   }
 }
 
-body.blog .skip-link {
-  position: absolute;
-  left: -1000px;
-  top: 5px;
-  z-index: 999;
-  background: white;
-  color: black;
-  font-family: serif;
-  font-size: 2rem;
-}
-
-body.blog .skip-link:focus {
-  left: 0;
+@media (max-width: 540px) {
+  body.index h1 {
+    visibility: hidden;
+  }
+  body.index .intro .wrapper .article {
+    width: 100%;
+  }
+  body.index .gallery ul li {
+    margin: 5px;
+  }
+  body.index .about {
+    height: 200vh;
+  }
+  body.index .about .wrapper .article {
+    margin: 20px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  body.index .aboutMore .imageContainer {
+    width: 90%;
+  }
+  body.index div.bannerImage {
+    background-position: 75% 0%;
+  }
+  body.index .freeTrials {
+    height: 90vh;
+  }
 }
 
 body.blog header {
   background-image: url(./../assets/blogImage1.jpg);
+}
+
+body.blog header h2 {
+  margin-top: 150px;
 }
 
 body.blog .blogContainer {
@@ -1028,6 +1054,74 @@ body.blog form button {
   }
 }
 
+@media (max-width: 550px) {
+  body.blog header h2 {
+    margin-top: 300px;
+  }
+  body.blog .post {
+    margin: 0;
+    width: 100%;
+    position: relative;
+    top: -20px;
+  }
+  body.blog .post .articleContent {
+    width: 100%;
+    margin-top: 0;
+    padding: 5px;
+  }
+  body.blog .post .articleContent h3 {
+    margin-top: 0;
+  }
+  body.blog .post .articleContent p {
+    font-size: .9rem;
+  }
+  body.blog aside {
+    margin: 0;
+    width: 100%;
+  }
+  body.blog aside .imageContainer {
+    visibility: hidden;
+  }
+  body.blog aside .asideContent {
+    width: 100%;
+    padding: 5px;
+  }
+  body.blog .comments {
+    width: 90%;
+  }
+  body.blog .comments .commenterContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body.blog .comments .commenterContainer .imageContainer {
+    width: 90%;
+  }
+  body.blog form {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+  body.blog form fieldset {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body.blog form fieldset input {
+    width: 90%;
+  }
+  body.blog form fieldset button [type="submit"] {
+    margin-bottom: 20px;
+  }
+}
+
 body.contact header {
   background-image: url(./../assets/contactImage1.jpg);
 }
@@ -1078,8 +1172,9 @@ body.contact .copyrightBar {
 
 @media (max-width: 960px) {
   body.contact h2 {
-    margin-top: 300px;
+    margin-top: 250px;
     text-align: center;
+    font-size: 3.5rem;
   }
   body.contact form {
     position: absolute;
@@ -1102,5 +1197,41 @@ body.contact .copyrightBar {
   }
   body.contact .copyrightBar {
     margin: 0;
+  }
+}
+
+@media (max-width: 660px) {
+  body.contact form {
+    height: 700px;
+    -webkit-box-shadow: 10px 10px #ffc600;
+            box-shadow: 10px 10px #ffc600;
+  }
+  body.contact form fieldset {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body.contact form fieldset input {
+    width: 100%;
+  }
+  body.contact form fieldset input::-webkit-input-placeholder {
+    font-size: 0.7em;
+  }
+  body.contact form fieldset input:-ms-input-placeholder {
+    font-size: 0.7em;
+  }
+  body.contact form fieldset input::-ms-input-placeholder {
+    font-size: 0.7em;
+  }
+  body.contact form fieldset input::placeholder {
+    font-size: 0.7em;
+  }
+  body.contact footer {
+    position: initial;
+    margin: 75vh 0 50px;
   }
 }

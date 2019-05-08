@@ -41,8 +41,9 @@ body.contact {
 
     @media (max-width: 960px) {
         h2 {
-            margin-top: 300px;
+            margin-top: 250px;
             text-align: center;
+            font-size: 3.5rem;
         }
 
         form {
@@ -69,6 +70,27 @@ body.contact {
     }
 
     @media (max-width: 660px) {
-        
+        form {
+            height: 700px;
+            box-shadow: 10px 10px $yellow;
+             
+            fieldset {
+                display: flex;
+                flex-direction: column;
+
+                input {
+                    width: 100%;
+                
+                    &::placeholder {
+                        font-size: 0.7em;
+                    }
+                }
+            }
+        }
+
+        footer {
+            position: initial;
+            margin: 75vh 0 50px;
+        }
     }
 }

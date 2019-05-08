@@ -168,7 +168,7 @@ body.index {
         }
 
         img {
-             @include position (absolute, 35%, null, null, null);
+             @include position (absolute, 30%, null, null, null);
             width: 500px;
         }
     }
@@ -299,6 +299,43 @@ body.index {
 }
 
 @media (max-width: 540px) {
-    
+    h1 {
+        visibility: hidden;
+    }
+
+    .intro .wrapper .article{
+        width: 100%;
+    }
+
+    .gallery ul li {
+        margin: 5px;
+    }
+
+    .about {
+        height: 200vh; 
+       
+        .wrapper .article {
+            margin: 20px auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+
+            p {
+                
+            }
+        }
+    }
+
+    .aboutMore .imageContainer {
+        width: 90%;
+    }
+
+    div.bannerImage {
+        background-position: 75% 0%;
+    }
+
+    .freeTrials {
+        height: 90vh;
+    }
 }
 }
