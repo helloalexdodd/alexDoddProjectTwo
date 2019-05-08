@@ -19,12 +19,13 @@ body.contact {
     }
 
     footer {
-        @include position (absolute, null, -10%, -30%, null);
-        width: calc(40% - 50px);
+        float: right;
+        margin: 100px 100px;
     }
 
     .copyrightBar {
         margin-top: 60vh;
+        width: 100vw;
     }   
 
     @media (max-width: 1180px) {
@@ -50,7 +51,7 @@ body.contact {
             @include position (absolute, 60%, 0,0,0);
             width: 80%;
             height: 600px;
-            margin: 0 auto;
+            margin: 20px auto;
         }
 
         footer {
@@ -65,13 +66,14 @@ body.contact {
         }
 
         .copyrightBar {
-            margin: 0;
+            // margin: 0;
         }
     }
 
     @media (max-width: 660px) {
         form {
-            height: 700px;
+            padding-top: 0;
+            height: 650px;
             box-shadow: 10px 10px $yellow;
              
             fieldset {
@@ -82,7 +84,7 @@ body.contact {
                     width: 100%;
                 
                     &::placeholder {
-                        font-size: 0.7em;
+                        font-size: .9em;
                     }
                 }
             }

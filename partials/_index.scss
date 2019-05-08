@@ -152,6 +152,7 @@ body.index {
 
     .freeTrials {
         padding: 50px;
+        text-align: center;
 
         a {
             bottom: -20px;
@@ -288,12 +289,12 @@ body.index {
         background-repeat: no-repeat;
         background-size: cover;
         background-position: 50% 50%;
-        height: 400px;
+        // height: 400px;
     }
 
     .freeTrials {
         padding: 0 20px;
-        height: 60vh;
+        height: 50vh;
         text-align: center;
     }
 }
@@ -319,10 +320,6 @@ body.index {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-
-            p {
-                
-            }
         }
     }
 
