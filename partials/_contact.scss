@@ -27,44 +27,48 @@ body.contact {
         margin-top: 60vh;
     }   
 
-@media (max-width: 1180px) {
-    form {
-        @include position (absolute, 65%, null, null, 5%);
-        width: 60%;
-    }
+    @media (max-width: 1180px) {
+        form {
+            @include position (absolute, 65%, null, null, 5%);
+            width: 60%;
+        }
 
-    footer {
-        @include position (absolute, null, -7%, null, null);
-    }
-}
-
-
-@media (max-width: 960px) {
-    h2 {
-        margin-top: 300px;
-        text-align: center;
-    }
-
-    form {
-        @include position (absolute, 60%, 0,0,0);
-        width: 80%;
-        height: 600px;
-        margin: 0 auto;
-    }
-
-    footer {
-        position: initial;
-        margin: 55vh 0 50px;
-        width: 100%;
-        text-align: center;
-
-        p {
-            margin: 5px;
+        footer {
+            @include position (absolute, null, -7%, null, null);
         }
     }
 
-    .copyrightBar {
-        margin: 0;
+
+    @media (max-width: 960px) {
+        h2 {
+            margin-top: 300px;
+            text-align: center;
+        }
+
+        form {
+            @include position (absolute, 60%, 0,0,0);
+            width: 80%;
+            height: 600px;
+            margin: 0 auto;
+        }
+
+        footer {
+            position: initial;
+            margin: 55vh 0 50px;
+            width: 100%;
+            text-align: center;
+
+            p {
+                margin: 5px;
+            }
+        }
+
+        .copyrightBar {
+            margin: 0;
+        }
     }
-}
+
+    @media (max-width: 660px) {
+        
+    }
 }
